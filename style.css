@@ -1,0 +1,109 @@
+/* ================= GENERAL ================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* ================= NAVIGATION BAR (FLOAT) ================== */
+nav {
+    background-color: #222;
+    padding: 10px 20px;
+    color: white;
+    overflow: hidden;
+}
+
+nav .logo {
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ================= HOME PAGE ================== */
+.hero {
+    padding: 80px;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+/* ================= ABOUT PAGE ================== */
+.about-container {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.about-container img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* ================= SKILLS PAGE (FLEXBOX) ================== */
+.skills-container {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background: #e8e8e8;
+    border: 2px solid #c71a1a;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* ================= CONTACT FORM PAGE ================== */
+.form-container {
+    width: 40%;
+    margin: 30px auto;
+    background: #efefef;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
